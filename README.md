@@ -30,7 +30,8 @@ See `ape-config.yaml.example`
 Installing this plugin adds support for the Linea ecosystem:
 
 ```bash
-ape console --network linea:testnet
+ape console --network linea:goerli
+ape console --network linea:mainnet
 ```
 
 ## Development
