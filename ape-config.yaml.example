@@ -1,4 +1,6 @@
 geth:
   linea:
     goerli:
-      uri: https://consensys-zkevm-goerli-prealpha.infura.io/v3/<YOUR-PROJECT-ID>
+      uri: https://linea-goerli.infura.io/v3/<YOUR-PROJECT-ID>
+    mainnet:
+      uri: https://linea-mainnet.infura.io/v3/<YOUR-PROJECT-ID>

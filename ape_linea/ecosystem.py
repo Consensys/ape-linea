@@ -13,6 +13,7 @@ from eth_utils import add_0x_prefix, decode_hex
 NETWORKS = {
     # chain_id, network_id
     "goerli": (59140, 59140),
+    "mainnet": (59144, 59144),
 }
 
 
