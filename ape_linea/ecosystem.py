@@ -37,7 +37,15 @@ def _create_local_config(default_provider: Optional[str] = None) -> NetworkConfi
     )
 
 
+def _create_mainnet_config(default_provider: Optional[str] = None) -> NetworkConfig:
+    return _create_network_config(
+        required_confirmations=1, block_time=2, default_provider=default_provider
+    )
+
+
 class LineaConfig(PluginConfig):
+    mainnet: NetworkConfig = _create_mainnet_config()
+    mainnet_fork: NetworkConfig = _create_local_config()
     goerli: NetworkConfig = _create_network_config()
     goerli_fork: NetworkConfig = _create_local_config()
     local: NetworkConfig = _create_local_config(default_provider="test")
