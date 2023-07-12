@@ -23,14 +23,15 @@ python3 setup.py install
 ## Configuration
 
 You need to configure a node provider for Linea in your `ape-config.yaml`.
-See `ape-config.yaml.example` 
+See `ape-config.yaml.example`
 
 ## Quick Usage
 
 Installing this plugin adds support for the Linea ecosystem:
 
 ```bash
-ape console --network linea:testnet
+ape console --network linea:goerli
+ape console --network linea:mainnet
 ```
 
 ## Development
@@ -39,10 +40,10 @@ This project is in development and should be considered a beta.
 Things might not be in their final state and breaking changes may occur.
 Comments, questions, criticisms and pull requests are welcomed.
 
-## Work in progress 
+## Work in progress
 
-- [ ] Publish the repo on ApeWorX github
-- [ ] Publish the package on pypi
+- \[ \] Publish the repo on ApeWorX github
+- \[ \] Publish the package on pypi
 
 ### via `ape`
 

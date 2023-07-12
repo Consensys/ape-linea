@@ -13,6 +13,7 @@ from eth_utils import add_0x_prefix, decode_hex
 NETWORKS = {
     # chain_id, network_id
     "goerli": (59140, 59140),
+    "mainnet": (59144, 59144),
 }
 
 
@@ -36,7 +37,15 @@ def _create_local_config(default_provider: Optional[str] = None) -> NetworkConfi
     )
 
 
+def _create_mainnet_config(default_provider: Optional[str] = None) -> NetworkConfig:
+    return _create_network_config(
+        required_confirmations=1, block_time=2, default_provider=default_provider
+    )
+
+
 class LineaConfig(PluginConfig):
+    mainnet: NetworkConfig = _create_mainnet_config()
+    mainnet_fork: NetworkConfig = _create_local_config()
     goerli: NetworkConfig = _create_network_config()
     goerli_fork: NetworkConfig = _create_local_config()
     local: NetworkConfig = _create_local_config(default_provider="test")
