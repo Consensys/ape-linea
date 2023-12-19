@@ -12,13 +12,14 @@ extras_require = {
     ],
     "lint": [
         "black>=22.12.0",  # auto-formatter and linter
-        "mypy>=0.991",  # Static type analyzer
-        "flake8>=5.0.4",  # Style linter
+        "mypy>=1.7.1",  # Static type analyzer
+        "flake8>=6.1.0",  # Style linter
         "isort>=5.10.1",  # Import sorting linter
         "types-setuptools",  # Needed due to mypy typeshed
-        "mdformat>=0.7.16",  # Auto-formatter for markdown
+        "mdformat>=0.7.17",  # Auto-formatter for markdown
         "mdformat-gfm>=0.3.5",  # Needed for formatting GitHub-flavored markdown
         "mdformat-frontmatter>=0.4.1",  # Needed for frontmatters-style headers in issue templates
+        "mdformat-pyproject>=0.0.1",  # Allows configuring in pyproject.toml
     ],
     "doc": [
         "myst-parser>=0.17.0,<0.18",  # Tools for parsing markdown files in the docs
@@ -67,7 +68,7 @@ setup(
     url="https://github.com/ApeWorX/ape-linea",
     include_package_data=True,
     install_requires=[
-        "eth-ape>=0.6.0,<0.7",
+        "eth-ape>=0.7.0,<0.8",
     ],
     python_requires=">=3.8,<4",
     extras_require=extras_require,
@@ -88,5 +89,6 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
 )
