@@ -15,7 +15,7 @@ write_to = "ape_linea/version.py"
 
 [tool.black]
 line-length = 100
-target-version = ['py38', 'py39', 'py310']
+target-version = ['py38', 'py39', 'py310', 'py311']
 include = '\.pyi?$'
 
 [tool.pytest.ini_options]
@@ -37,3 +37,6 @@ force_grid_wrap = 0
 include_trailing_comma = true
 multi_line_output = 3
 use_parentheses = true
+
+[tool.mdformat]
+number = true
